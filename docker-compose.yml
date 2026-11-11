@@ -1,0 +1,17 @@
+services:
+  mongodb:
+    image: mongo:8
+    container_name: secure-notes-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-secretpassword123}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE:-secure_notes}
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
+
