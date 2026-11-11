@@ -6,6 +6,21 @@ This project emphasizes database indexing efficiency, MongoDB aggregation pipeli
 
 ---
 
+## 🌐 Live Application & Demo
+
+* **Live Frontend Website**: [http://103.85.240.79:8090](http://103.85.240.79:8090)
+* **Live Backend API**: [http://103.85.240.79:8090/api](http://103.85.240.79:8090/api)
+* **Health Check**: [http://103.85.240.79:8090/api/health](http://103.85.240.79:8090/api/health)
+
+### Demo Credentials:
+
+| Role | Email | Password | Access Details |
+| :--- | :--- | :--- | :--- |
+| **Admin** | `admin@example.com` | `AdminSecurePass123!` | Admin user management, global notes feed, aggregation showcase |
+| **User** | `john@example.com` | `Password123!` | Personal note CRUD, pagination, IDOR protection verification |
+
+---
+
 ## 1. Technology Stack
 
 ### Backend
